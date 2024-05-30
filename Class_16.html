@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator Project</title>
+	<link rel="stylesheet" type="text/css" href="Class_16.css">
+	<script type="text/javascript" src="Class_16.js"></script>
+</head>
+<body>
+	<br>
+	<center>
+	<div style="width: 400px; padding: 22px; padding-left: 20px; border: 8px solid #0000ff; background-color: #ff0000;">
+		<center>
+		<div style="width: 400px; border: 1px solid transparent; background-color: #000;">
+
+			<form name="mainform">
+				<br>
+				<input type="text" name="result" id="output" class="display">
+				<br><br>
+
+				<input type="button" name="1" value="1" onclick="mainform.result.value += '1'" id="1" class="number">
+				<input type="button" name="2" value="2" onclick="mainform.result.value += '2'" id="2" class="number">
+				<input type="button" name="3" value="3" onclick="mainform.result.value += '3'" id="3" class="number">
+				<br><br>
+
+				<input type="button" name="4" value="4" onclick="mainform.result.value += '4'" id="4" class="number">
+				<input type="button" name="5" value="5" onclick="mainform.result.value += '5'" id="5" class="number">
+				<input type="button" name="6" value="6" onclick="mainform.result.value += '6'" id="6" class="number">
+				<br><br>
+
+				<input type="button" name="7" value="7" onclick="mainform.result.value += '7'" id="7" class="number">
+				<input type="button" name="8" value="8" onclick="mainform.result.value += '8'" id="8" class="number">
+				<input type="button" name="9" value="9" onclick="mainform.result.value += '9'" id="9" class="number">
+				<br><br>
+
+				<input type="button" name="0" value="0" onclick="mainform.result.value += '0'" id="0" class="number">
+				<input type="button" name="+" value="+" onclick="mainform.result.value += '+'" id="+" class="operation">
+				<input type="button" name="-" value="-" onclick="mainform.result.value += '-'" id="-" class="operation">
+				<br><br>
+
+				<input type="button" name="/" value="/" onclick="mainform.result.value += '/'" id="/" class="operation">
+				<input type="button" name="*" value="*" onclick="mainform.result.value += '*'" id="*" class="operation">
+				<input type="button" name="%" value="%" onclick="mainform.result.value += '%'" id="%" class="operation">
+				<br><br>
+
+				<input type="button" name="=" value="=" onclick="mainform.result.value = eval(mainform.result.value)" id="=" class ="operation">
+				<input type="button" value="ON" onclick="on()" class="on">
+				<input type="button" value="OFF" onclick="off()" class="off">
+				<br><br>
+
+				<input type="button" name="clear" value="CLEAR ALL" onclick="mainform.result.value = ''" class="clear">
+				<br><br>
+			</form>
+
+		</div>
+		</center>
+	</div>
+	</center>
+
+</body>
+</html>
